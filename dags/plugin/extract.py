@@ -9,7 +9,6 @@ from selenium.webdriver.chrome.service import Service
 from plugin.function.operation import opera
 from plugin.function.filepath import conf
 
-from webdriver_manager.chrome import ChromeDriverManager
 class extract():
     def main():
         with open(f'{conf.filepath()}/login_credential.txt',"r",encoding="utf-8") as outfile:

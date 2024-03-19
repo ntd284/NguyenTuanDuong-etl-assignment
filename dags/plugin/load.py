@@ -30,3 +30,4 @@ class load_mysql():
         df = pd.read_csv(f'{conf.filepath()}/profiles-formated.csv')
         df.to_sql('profiles', con=engine, if_exists='append', index=False)
         print(df)
+        print('')
