@@ -5,7 +5,7 @@
 This project implements an Extract, Transform, Load (ETL) pipeline specifically designed for the extraction and transformation of candidate profile data from various sources. Below is an outline of the project directory structure and a description of each component:
 
 ## Directory Structure
-
+```
 NGUYENTUANDUONG-ETL-ASSIGNMENT/
 ├── dags/
 │   └── [DAG definition files]
@@ -26,7 +26,7 @@ NGUYENTUANDUONG-ETL-ASSIGNMENT/
 │   └── main.py                     # Main script to orchestrate the ETL pipeline
 ├── README.md                       # Documentation and instructions
 └── requirements.txt                # Python dependencies required
-
+```
 ## Key Components
 
 - dags/: Contains Airflow DAG definitions that schedule and monitor the ETL process.
