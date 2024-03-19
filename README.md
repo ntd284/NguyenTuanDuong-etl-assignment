@@ -21,7 +21,7 @@ NGUYENTUANDUONG-ETL-ASSIGNMENT/
 │   │   ├── filepath.py             # Utility functions for file path handling
 │   │   └── operation.py            # Utility functions for common operations
 │   ├── extract.py                  # Script to extract data from sources
-│   ├── load.py                     # Script to load data into the desired storage
+│   ├── load.py                     # Script to load data into Mysql
 │   ├── transform.py                # Script to transform raw data into a structured format
 │   └── main.py                     # Main script to orchestrate the ETL pipeline
 ├── README.md                       # Documentation and instructions
@@ -117,7 +117,7 @@ class transform():
 ```
 
 <b>3. Data Loading (load.py)</b>
-This script saves the transformed data to a file or database.
+This script saves the transformed data to a mysql.
 ```
 import mysql.connector
 import pandas as pd
@@ -151,5 +151,5 @@ class load_mysql():
         df.to_sql('profiles', con=engine, if_exists='append', index=False)
         print(df)
         print('')
-
 ```
+
