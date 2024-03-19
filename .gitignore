@@ -1,2 +1,2 @@
-dags/file
-dags/plugin/function/credentials
+dags/file/*
+dags/plugin/function/credentials.json
